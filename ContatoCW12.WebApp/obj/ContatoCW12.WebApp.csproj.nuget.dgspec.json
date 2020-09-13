@@ -1,0 +1,151 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Programas\\Microsoft\\vstudio\\CloudComputing\\ContatoCW12.WebApp\\ContatoCW12.WebApp.csproj": {}
+  },
+  "projects": {
+    "D:\\Programas\\Microsoft\\vstudio\\CloudComputing\\Agenda.Data\\Agenda.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programas\\Microsoft\\vstudio\\CloudComputing\\Agenda.Data\\Agenda.Data.csproj",
+        "projectName": "Agenda.Data",
+        "projectPath": "D:\\Programas\\Microsoft\\vstudio\\CloudComputing\\Agenda.Data\\Agenda.Data.csproj",
+        "packagesPath": "C:\\Users\\Juninho\\.nuget\\packages\\",
+        "outputPath": "D:\\Programas\\Microsoft\\vstudio\\CloudComputing\\Agenda.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Juninho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Azure.Storage.Blob": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "Microsoft.Azure.Storage.Common": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "Microsoft.Azure.Storage.Queue": {
+              "target": "Package",
+              "version": "[11.2.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programas\\Microsoft\\vstudio\\CloudComputing\\ContatoCW12.WebApp\\ContatoCW12.WebApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programas\\Microsoft\\vstudio\\CloudComputing\\ContatoCW12.WebApp\\ContatoCW12.WebApp.csproj",
+        "projectName": "ContatoCW12.WebApp",
+        "projectPath": "D:\\Programas\\Microsoft\\vstudio\\CloudComputing\\ContatoCW12.WebApp\\ContatoCW12.WebApp.csproj",
+        "packagesPath": "C:\\Users\\Juninho\\.nuget\\packages\\",
+        "outputPath": "D:\\Programas\\Microsoft\\vstudio\\CloudComputing\\ContatoCW12.WebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Juninho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Programas\\Microsoft\\vstudio\\CloudComputing\\Agenda.Data\\Agenda.Data.csproj": {
+                "projectPath": "D:\\Programas\\Microsoft\\vstudio\\CloudComputing\\Agenda.Data\\Agenda.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

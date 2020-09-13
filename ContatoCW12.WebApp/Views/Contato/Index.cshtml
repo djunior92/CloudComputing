@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Agenda.Data.Contato>
+
+@{
+    ViewData["Title"] = "Lista de Contatos";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Edit">Novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fone)
+            </th>
+            <th>Thumb</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fone)
+                </td>
+                <td>
+                    <img class="img-thumbnail" src="@Html.Raw(item.UrlThumb)" />
+                </td>
+                <td>
+                    @Html.ActionLink("Alterar", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Enviar", "Upload", new { id = item.Id }) |
+                    <a href="@item.UrlFoto" target="_blank">Ver foto</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
